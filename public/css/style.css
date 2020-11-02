@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: Arial; 
+	padding: 10px; 
+	background: #f1f1f1;
+}
+
+/* light color #cabcb3 */
+/* light color #9c8f79 */
+/* light color #80625a */
+/* light color #73493f */
+
+.header {
+	background: url("images/background.jpg") no-repeat center fixed;
+	background-size: cover;
+	text-align: left;
+	color: white; 
+	padding: 30px; 
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;  
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.topnav a:hover:not(.active) {
+	background-color: #ddd; 
+	color: black;
+}
+
+.active {
+	background-color: #ae4532; 
+}
+
+.cart a {
+	float: right; 
+}
+
+.leftcolumn {
+	float: left; 
+	width: 75%; 
+}
+
+.leftcolumn h2 {
+	text-align: center;
+}
+
+.rightcolumn {
+	float: left; 
+	width: 25%; 
+	background-color: #f1f1f1;
+	padding-left: 20px;
+}
+
+.rightcolumn h2 {
+	font-size: 20px;
+	text-align: left;
+}
+
+
+.contents {
+	margin-top: 20px;
+	padding: 20px;
+	background-color: white;
+}
+
+.contents a {
+	text-decoration: none;
+}
+
+.row:after {
+	content: "";
+	display: table; 
+	clear: both;
+}
+
+.footer {
+	padding: 20px;
+	text-align: center;
+	background: #ddd;
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
